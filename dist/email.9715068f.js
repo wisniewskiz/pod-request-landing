@@ -142,31 +142,7 @@ function validateEmail(email) {
 }
 
 ;
-},{}],"js/app.js":[function(require,module,exports) {
-"use strict";
-
-var _email = require("./email");
-
-var email = document.querySelector('#email');
-var button = document.querySelector('#submit');
-var message = document.querySelector('#formMessage');
-button.addEventListener('click', function () {
-  var value = email.value;
-  var isValid = (0, _email.validateEmail)(value);
-
-  if (message.classList.contains('hidden') == false && isValid) {
-    message.classList.toggle('hidden');
-  }
-
-  ;
-
-  if (message.classList.contains('hidden') && !isValid) {
-    message.classList.toggle('hidden');
-  }
-
-  ;
-});
-},{"./email":"js/email.js"}],"../../../../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -370,5 +346,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
-//# sourceMappingURL=/app.c3f9f951.js.map
+},{}]},{},["../../../../../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/email.js"], null)
+//# sourceMappingURL=/email.9715068f.js.map

@@ -77,6 +77,10 @@ button {
   color: #54e6af;
 }
 
+.hidden {
+  display: none;
+}
+
 button {
   width: 162px;
   height: 46px;
@@ -177,7 +181,6 @@ body {
 @media (max-width: 700px) {
   body {
     background-image: url("/image-host.cf67a10a.jpg");
-    background-position: top right;
     background-size: cover;
   }
 }
